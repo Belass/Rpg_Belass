@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpg.MainController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/warrior.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="179.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/healer.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="464.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/hunter.jpeg" />
+         </image></ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Mage.jpeg" />
+         </image></ImageView>
+      <Button fx:id="goToFightButton" layoutX="378.0" layoutY="309.0" mnemonicParsing="false" onAction="#setGoToFightButton" text="Let's fight" />
+      <Button fx:id="menuButton" layoutX="136.0" layoutY="309.0" mnemonicParsing="false" onAction="#backtoMenu" text="Back to the menu" />
+      <RadioButton layoutX="26.0" layoutY="182.0" mnemonicParsing="false" onAction="#addoneWarrior" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="numberofWarrior" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="185.0" layoutY="182.0" mnemonicParsing="false" onAction="#addoneHealer" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="numberofHealer" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="oneWarrior" layoutX="26.0" layoutY="223.0" mnemonicParsing="false" onAction="#addtwoWarriors" text="2" toggleGroup="$numberofWarrior" />
+      <RadioButton fx:id="twoHealer" layoutX="185.0" layoutY="223.0" mnemonicParsing="false" onAction="#addtwoHealers" text="2" toggleGroup="$numberofHealer" />
+      <RadioButton layoutX="325.0" layoutY="182.0" mnemonicParsing="false" onAction="#addoneMage" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="numberofMage" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="oneMage" layoutX="325.0" layoutY="223.0" mnemonicParsing="false" onAction="#addtwoMages" text="2" toggleGroup="$numberofMage" />
+      <RadioButton layoutX="464.0" layoutY="182.0" mnemonicParsing="false" onAction="#addoneHunter" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="numberofHunter" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="oneHunter" layoutX="463.0" layoutY="223.0" mnemonicParsing="false" onAction="#addtwoHunters" text="2" toggleGroup="$numberofHunter" />
+      <RadioButton fx:id="twoWarriors" layoutX="26.0" layoutY="259.0" mnemonicParsing="false" onAction="#addthreeWarriors" text="3" toggleGroup="$numberofWarrior" />
+      <RadioButton fx:id="twoHealers" layoutX="185.0" layoutY="259.0" mnemonicParsing="false" onAction="#addthreeHealers" text="3" toggleGroup="$numberofHealer" />
+      <RadioButton fx:id="twoMages" layoutX="325.0" layoutY="259.0" mnemonicParsing="false" onAction="#addthreeMages" text="3" toggleGroup="$numberofMage" />
+      <RadioButton fx:id="twoHunters" layoutX="463.0" layoutY="259.0" mnemonicParsing="false" onAction="#addthreeHunters" text="3" toggleGroup="$numberofHunter" />
+   </children>
+</AnchorPane>

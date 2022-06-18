@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpg.MainController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/warrior.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="179.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/healer.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="464.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/hunter.jpeg" />
+            </image></ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Images/Mage.jpeg" />
+            </image></ImageView>
+        <Button layoutX="378.0" layoutY="309.0" mnemonicParsing="false" text="Let's fight" />
+        <Button fx:id="menuButton" layoutX="136.0" layoutY="309.0" mnemonicParsing="false" onAction="#backtoMenu" text="Back to the menu" />
+        <RadioButton fx:id="oneWarrior" layoutX="26.0" layoutY="223.0" mnemonicParsing="false" text="Upgrade armor">
+         <toggleGroup>
+            <ToggleGroup fx:id="UpgradingWarrior" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="oneHealer" layoutX="185.0" layoutY="223.0" mnemonicParsing="false" text="Upgrade armor">
+         <toggleGroup>
+            <ToggleGroup fx:id="UpgradingHealer" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="oneMage" layoutX="325.0" layoutY="223.0" mnemonicParsing="false" text="Upgrade armor">
+         <toggleGroup>
+            <ToggleGroup fx:id="UpgradingMage" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="oneHunter" layoutX="463.0" layoutY="223.0" mnemonicParsing="false" text="Upgrade armor">
+         <toggleGroup>
+            <ToggleGroup fx:id="UpgradingHunter" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="twoWarriors" layoutX="26.0" layoutY="259.0" mnemonicParsing="false" text="Upgrade damage " toggleGroup="$UpgradingWarrior" />
+        <RadioButton fx:id="twoHealers" layoutX="185.0" layoutY="259.0" mnemonicParsing="false" text="Upgrade damage " toggleGroup="$UpgradingHealer" />
+        <RadioButton fx:id="twoMages" layoutX="325.0" layoutY="259.0" mnemonicParsing="false" text="Upgrade damage " toggleGroup="$UpgradingMage" />
+        <RadioButton fx:id="twoHunters" layoutX="463.0" layoutY="259.0" mnemonicParsing="false" text="Upgrade damage " toggleGroup="$UpgradingHealer" />
+    </children>
+</AnchorPane>

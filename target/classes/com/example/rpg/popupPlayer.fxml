@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="142.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpg.MainController">
+   <children>
+      <Label prefHeight="142.0" prefWidth="303.0" text="       Please, select at least one player" textAlignment="CENTER">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
